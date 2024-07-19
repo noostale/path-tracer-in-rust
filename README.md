@@ -1,4 +1,12 @@
-# How to compile and run
+# Path Tracer implementation in Rust
+
+This repository contains a path tracer implementation in Rust. The program is capable of rendering images of 3D scenes with spheres and planes.
+
+![output.ppm](output.png)
+
+## Description
+
+Path tracing is a computer graphics method of rendering images of three-dimensional scenes such that the global illumination is faithful to reality. It is a physically based rendering algorithm that simulates light transport, which naturally simulates many effects that have to be specifically added to other algorithms. These effects include soft shadows, depth of field, motion blur, caustics, ambient occlusion, and indirect lighting. Path tracing is a Monte Carlo method: it repeatedly traces paths of light through the scene and uses the results to estimate the final image.
 
 ## Compiling
 
@@ -46,7 +54,3 @@ cargo run --release
 ```
 
 The program will create a `output.ppm` file in the root directory of the project. The file will contain the rendered image.
-
-# Output examples
-
-[output.ppm](output.ppm) is an example of the output of the program.
